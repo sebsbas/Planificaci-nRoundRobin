@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Example">
+
+    <TextView
+        android:id="@+id/txtTitle3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/hagamos_un_ejemplo_practico"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTxtTR2"
+        android:layout_width="355dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="@string/digite_el_tiempo_de_rafaga_del_proceso_2"
+        android:inputType="numberSigned"
+        android:textColorHint="#757575"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtTL2"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/editTxtTR3"
+        android:layout_width="355dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:hint="@string/digite_el_tiempo_de_rafaga_del_proceso_3"
+        android:inputType="numberSigned"
+        android:textColorHint="#757575"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtTL3"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/editTxtQ"
+        android:layout_width="237dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/digite_el_cuantum"
+        android:inputType="numberSigned"
+        android:textColorHint="#757575"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle3"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/editTxtTL1"
+        android:layout_width="355dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:hint="@string/digite_el_tiempo_de_llegada_del_proceso_1"
+        android:inputType="numberSigned"
+        android:textColorHint="#757575"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtQ"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/editTxtTR"
+        android:layout_width="355dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/digite_el_tiempo_de_rafaga_del_proceso_1"
+        android:inputType="numberSigned"
+        android:textColorHint="#757575"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtTL1"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/editTxtTL3"
+        android:layout_width="355dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="55dp"
+        android:ems="10"
+        android:hint="@string/digite_el_tiempo_de_llegada_del_proceso_3"
+        android:inputType="numberSigned"
+        android:textColorHint="#757575"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtTR2"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/editTxtTL2"
+        android:layout_width="355dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="58dp"
+        android:ems="10"
+        android:hint="@string/digite_el_tiempo_de_llegada_del_proceso_2"
+        android:inputType="numberSigned"
+        android:textColorHint="#757575"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtTR"
+        android:importantForAutofill="no" />
+</androidx.constraintlayout.widget.ConstraintLayout>

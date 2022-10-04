@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Planificación Round RObin</string>
+    <string name="digite_el_cuantum">Digite el cuantum</string>
+    <string name="digite_el_tiempo_de_llegada_del_proceso_1">Digite el Tiempo de llegada del proceso 1</string>
+    <string name="digite_el_tiempo_de_rafaga_del_proceso_1">Digite el Tiempo de Rafaga del proceso 1</string>
+    <string name="digite_el_tiempo_de_llegada_del_proceso_3">Digite el Tiempo de llegada del proceso 3</string>
+    <string name="digite_el_tiempo_de_rafaga_del_proceso_2">Digite el Tiempo de Rafaga del proceso 2</string>
+    <string name="digite_el_tiempo_de_llegada_del_proceso_2">Digite el Tiempo de llegada del proceso 2</string>
+    <string name="digite_el_tiempo_de_rafaga_del_proceso_3">Digite el Tiempo de Rafaga del proceso 3</string>
+    <string name="hagamos_un_ejemplo_practico">Hagamos un ejemplo practico</string>
+</resources>
