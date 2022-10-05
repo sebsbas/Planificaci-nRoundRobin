@@ -6,6 +6,47 @@
     android:layout_height="match_parent"
     tools:context=".Example">
 
+    <ImageButton
+        android:id="@+id/btnNext3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="47dp"
+        android:backgroundTint="#E2FFFFFF"
+        android:contentDescription="Next"
+        app:layout_constraintStart_toEndOf="@+id/btnHome3"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtTR3"
+        app:srcCompat="@android:drawable/ic_menu_send"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:srcCompat="@drawable/derecho_36" />
+
+    <ImageButton
+        android:id="@+id/btnHome3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="47dp"
+        android:backgroundTint="#DAFFFFFF"
+        android:contentDescription="Home"
+        app:layout_constraintStart_toEndOf="@+id/btnBack3"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtTR3"
+        app:srcCompat="@drawable/hogar_36"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/btnBack3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="47dp"
+        android:backgroundTint="#DFFFFFFF"
+        android:contentDescription="Back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtTR3"
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:srcCompat="@drawable/izquierdo_36" />
+
     <TextView
         android:id="@+id/txtTitle3"
         android:layout_width="wrap_content"

@@ -14,6 +14,7 @@ import android.widget.ImageButton;
 public class Tehory extends AppCompatActivity {
 
     private ImageButton btnContinue;
+    private ImageButton btnHome;
     private ImageButton btnRestore;
 
     ActivityResultLauncher<Intent> activityLauncher=registerForActivityResult(

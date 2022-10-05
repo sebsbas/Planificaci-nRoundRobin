@@ -38,19 +38,34 @@
         android:id="@+id/btnNext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="108dp"
-        android:layout_marginTop="52dp"
-        app:layout_constraintStart_toEndOf="@+id/btnBack"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#E1FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/btnHome"
         app:layout_constraintTop_toBottomOf="@+id/txtDefinition"
-        app:srcCompat="@android:drawable/ic_menu_send" />
+        app:srcCompat="@android:drawable/ic_menu_send"
+        tools:srcCompat="@drawable/derecho_36" />
 
     <ImageButton
         android:id="@+id/btnBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="84dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#E9FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtDefinition"
-        app:srcCompat="@android:drawable/ic_menu_revert" />
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        tools:srcCompat="@drawable/izquierdo_36" />
+
+    <ImageButton
+        android:id="@+id/btnHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#D0FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/btnBack"
+        app:layout_constraintTop_toBottomOf="@+id/txtDefinition"
+        app:srcCompat="@drawable/hogar_36" />
 </androidx.constraintlayout.widget.ConstraintLayout>
