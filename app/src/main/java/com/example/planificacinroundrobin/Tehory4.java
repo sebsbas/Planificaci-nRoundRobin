@@ -41,7 +41,6 @@ public class Tehory4 extends AppCompatActivity {
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                System.out.println("Entró");
                 try {
                     Intent intent = new Intent(Tehory4.this, Tehory5.class);
 
