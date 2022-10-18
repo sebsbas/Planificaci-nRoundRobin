@@ -41,7 +41,7 @@ public class Tehory3 extends AppCompatActivity {
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Tehory3.this, Example.class);
+                Intent intent = new Intent(Tehory3.this, Tehory4.class);
 
                 activityLauncher.launch(intent);
 

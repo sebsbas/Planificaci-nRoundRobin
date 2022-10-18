@@ -25,8 +25,8 @@
 
     <EditText
         android:id="@+id/txtDefinition"
-        android:layout_width="382dp"
-        android:layout_height="467dp"
+        android:layout_width="385dp"
+        android:layout_height="512dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
         android:clickable="false"
@@ -53,11 +53,11 @@ proceso para dar oportunidad a otro proceso y así sucesivamente.'
         android:id="@+id/btnBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="32dp"
         android:backgroundTint="#E9FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtDefinition"
         app:srcCompat="@drawable/izquierdo_36"
         tools:srcCompat="@drawable/izquierdo_36" />
 
@@ -65,11 +65,11 @@ proceso para dar oportunidad a otro proceso y así sucesivamente.'
         android:id="@+id/btnNext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="32dp"
         android:backgroundTint="#E1FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnHome"
-        app:layout_constraintTop_toBottomOf="@+id/txtDefinition"
         app:srcCompat="@drawable/derecho_36"
         tools:srcCompat="@drawable/derecho_36" />
 
@@ -78,10 +78,10 @@ proceso para dar oportunidad a otro proceso y así sucesivamente.'
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginBottom="32dp"
         android:backgroundTint="#D0FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnBack"
-        app:layout_constraintTop_toBottomOf="@+id/txtDefinition"
         app:srcCompat="@drawable/hogar_36" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

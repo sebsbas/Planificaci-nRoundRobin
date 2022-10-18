@@ -57,7 +57,7 @@ public class Example extends AppCompatActivity {
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Example.this, Example.class);
+                Intent intent = new Intent(Example.this, Example2.class);
 
                 activityLauncher.launch(intent);
 
@@ -68,7 +68,7 @@ public class Example extends AppCompatActivity {
         btnRestore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Example.this, Tehory2.class);
+                Intent intent = new Intent(Example.this, Tehory5.class);
 
                 activityLauncher.launch(intent);
 
