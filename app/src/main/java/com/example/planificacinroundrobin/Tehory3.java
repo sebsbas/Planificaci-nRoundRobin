@@ -3,6 +3,7 @@ package com.example.planificacinroundrobin;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageButton;
 
 import androidx.activity.result.ActivityResult;
@@ -15,6 +16,8 @@ public class Tehory3 extends AppCompatActivity {
 
     private ImageButton btnNext;
     private ImageButton btnRestore;
+    private ImageButton btnHome;
+    private EditText text;
 
     ActivityResultLauncher<Intent> activityLauncher=registerForActivityResult(
             new ActivityResultContracts.StartActivityForResult(),
@@ -30,11 +33,14 @@ public class Tehory3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tehory3);
 
+        text = (EditText) findViewById(R.id.txtDefinition3);
+        text.setKeyListener(null);
+
         btnNext = (ImageButton) findViewById(R.id.btnNext3);
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Tehory3.this, Tehory3.class);
+                Intent intent = new Intent(Tehory3.this, Example.class);
 
                 activityLauncher.launch(intent);
 
@@ -45,7 +51,18 @@ public class Tehory3 extends AppCompatActivity {
         btnRestore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Tehory3.this, Tehory.class);
+                Intent intent = new Intent(Tehory3.this, Tehory2.class);
+
+                activityLauncher.launch(intent);
+
+            }
+        });
+
+        btnHome = (ImageButton) findViewById(R.id.btnHome3);
+        btnHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Tehory3.this, MainActivity.class);
 
                 activityLauncher.launch(intent);
 
