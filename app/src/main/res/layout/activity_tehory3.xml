@@ -17,54 +17,48 @@
         android:background="#FBFBFB"
         android:backgroundTint="#CBD2FB"
         android:text="Características:"
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextMultiLine3"
-        android:layout_width="329dp"
-        android:layout_height="63dp"
+        android:id="@+id/txtDefinition3"
+        android:layout_width="323dp"
+        android:layout_height="459dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="33dp"
         android:layout_marginEnd="40dp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
-        android:text="- A cada proceso se le asigna un intervalo de tiempo llamado Quantum (Q)."
+        android:text="- A cada proceso se le asigna un intervalo de tiempo llamado Quantum (Q).
+\n\n
+- Cada proceso se ejecuta durante éste Quantum de tiempo.
+\n\n
+Cuando un proceso recibe la CPU, puede ocurrir que:
+\n\n
+-El proceso tenga una ráfaga de CPU menor que el Quantum, donde el proceso terminara antes del
+Quantum y planifca un nuevo proceso.
+\n\n
+-El proceso tenga una ráfaga de CPU mayoor que el Quantum, donde este se agota y es expulsado
+de la CPU dando paso a otro proceso."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTitle3" />
-
-    <EditText
-        android:id="@+id/editTextTextMultiLine4"
-        android:layout_width="329dp"
-        android:layout_height="63dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="40dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
-        android:text="- Cada proceso se ejecuta durante éste Quantum de tiempo."
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine3" />
 
     <ImageButton
         android:id="@+id/btnHome3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="384dp"
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="50dp"
         android:backgroundTint="#F8F3F3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnNext3"
         app:layout_constraintStart_toEndOf="@+id/btnBack3"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine4"
         app:srcCompat="@drawable/hogar_36" />
 
     <ImageButton
@@ -72,14 +66,12 @@
         android:layout_width="60dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="384dp"
         android:layout_marginEnd="60dp"
         android:layout_marginBottom="50dp"
         android:backgroundTint="#FFFCFC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnHome3"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine4"
         app:srcCompat="@drawable/derecho_36" />
 
     <ImageButton
@@ -87,63 +79,12 @@
         android:layout_width="72dp"
         android:layout_height="56dp"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="384dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="50dp"
         android:backgroundTint="#F8F7F7"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnHome3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine4"
         app:srcCompat="@drawable/izquierdo_36" />
-
-    <EditText
-        android:id="@+id/editTextTextMultiLine5"
-        style="@style/Widget.AppCompat.AutoCompleteTextView"
-        android:layout_width="336dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="40dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
-        android:singleLine="false"
-        android:text="Cuando un proceso recibe la CPU, puede ocurrir que:"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine4" />
-
-    <EditText
-        android:id="@+id/editTextTextMultiLine6"
-        android:layout_width="332dp"
-        android:layout_height="116dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="40dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
-        android:text="-El proceso tenga una ráfaga de CPU menor que el Quantum, donde el proceso terminara antes del Quantum y planifca un nuevo proceso."
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine5" />
-
-    <EditText
-        android:id="@+id/editTextTextMultiLine7"
-        android:layout_width="324dp"
-        android:layout_height="116dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="40dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
-        android:text="-El proceso tenga una ráfaga de CPU mayoor que el Quantum, donde este se agota y es expulsado de la CPU dando paso a otro proceso."
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine6" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
