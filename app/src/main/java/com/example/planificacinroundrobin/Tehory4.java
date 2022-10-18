@@ -1,11 +1,11 @@
 package com.example.planificacinroundrobin;
 
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.TextView;
 
 import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultCallback;
@@ -13,7 +13,7 @@ import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Tehory3 extends AppCompatActivity {
+public class Tehory4 extends AppCompatActivity {
 
     private ImageButton btnNext;
     private ImageButton btnRestore;
@@ -32,38 +32,38 @@ public class Tehory3 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tehory3);
+        setContentView(R.layout.activity_tehory4);
 
-        text = (EditText) findViewById(R.id.txtDefinition3);
+        text = (EditText) findViewById(R.id.txtDefinition4a);
         text.setKeyListener(null);
 
-        btnNext = (ImageButton) findViewById(R.id.btnNext3);
+        btnNext = (ImageButton) findViewById(R.id.btnNext4);
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Tehory3.this, Example.class);
+                Intent intent = new Intent(Tehory4.this, Example.class);
 
                 activityLauncher.launch(intent);
 
             }
         });
 
-        btnRestore = (ImageButton) findViewById(R.id.btnBack3);
+        btnRestore = (ImageButton) findViewById(R.id.btnBack4);
         btnRestore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Tehory3.this, Tehory2.class);
+                Intent intent = new Intent(Tehory4.this, Tehory3.class);
 
                 activityLauncher.launch(intent);
 
             }
         });
 
-        btnHome = (ImageButton) findViewById(R.id.btnHome3);
+        btnHome = (ImageButton) findViewById(R.id.btnHome4);
         btnHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Tehory3.this, MainActivity.class);
+                Intent intent = new Intent(Tehory4.this, MainActivity.class);
 
                 activityLauncher.launch(intent);
 

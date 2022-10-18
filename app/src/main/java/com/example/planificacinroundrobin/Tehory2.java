@@ -34,7 +34,10 @@ public class Tehory2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tehory2);
 
-        text = (EditText) findViewById(R.id.txtDefinition2);
+        text = (EditText) findViewById(R.id.txtDefinition2a);
+        text.setKeyListener(null);
+
+        text = (EditText) findViewById(R.id.txtDefinition2b);
         text.setKeyListener(null);
 
         btnNext = (ImageButton) findViewById(R.id.btnNext2);
