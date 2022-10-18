@@ -48,7 +48,7 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
-        android:id="@+id/txtTitle3"
+        android:id="@+id/txtTitle2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -69,7 +69,7 @@
         android:inputType="numberSigned"
         android:textColorHint="#757575"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTitle3"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle2"
         android:importantForAutofill="no" />
 
     <EditText

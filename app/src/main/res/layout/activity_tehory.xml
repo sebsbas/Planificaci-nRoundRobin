@@ -8,11 +8,10 @@
 
     <TextView
         android:id="@+id/txtTitle"
-        android:layout_width="440dp"
-        android:layout_height="98dp"
-        android:layout_marginStart="36dp"
+        android:layout_width="387dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:gravity="center"
         android:text="¿QUÉ ES LA PLANIFICACIÓN ROUND ROBIN?"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,55 +19,53 @@
 
     <EditText
         android:id="@+id/txtDefinition"
-        android:layout_width="452dp"
-        android:layout_height="537dp"
+        android:layout_width="353dp"
+        android:layout_height="494dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
         android:clickable="false"
+        android:editable="false"
         android:ems="10"
-        android:gravity="clip_horizontal"
+        android:gravity="start|top"
         android:inputType="textMultiLine"
-        android:justificationMode="inter_word"
         android:password="false"
         android:saveEnabled="false"
-        android:text='Round-robin es un método para seleccionar todos los abstractos en un grupo de manera equitativa y en un orden racional, normalmente comenzando por el primer elemento de la lista hasta llegar al último y empezando de nuevo desde el primer elemento. El nombre del algoritmo viene del principio de Round-Robin conocido de otros campos, donde cada persona toma una parte de un algo compartido en cantidades, es decir, "toma turnos". \n\nEn operaciones computacionales, un método para ejecutar diferentes procesos de manera concurrente, para la utilización equitativa de los recursos del equipo, es limitando cada proceso a un pequeño período (quantum), y luego suspendiendo este proceso para dar oportunidad a otro proceso y así sucesivamente. A esto se le denomina comúnmente como Planificación Round-Robin.'
-        android:textSize="20sp"
+        android:text='Round-robin es un método para seleccionar todos los abstractos en un grupo de manera equitativa y en un orden racional, normalmente comenzando por el primer elemento de la lista hasta llegar al último y empezando de nuevo desde el primer elemento. El nombre del algoritmo viene del principio de Round-Robin conocido de otros campos, donde cada persona toma una parte de un algo compartido en cantidades, es decir, "toma turnos". En operaciones computacionales, un método para ejecutar diferentes procesos de manera concurrente, para la utilización equitativa de los recursos del equipo, es limitando cada proceso a un pequeño período (quantum), y luego suspendiendo este proceso para dar oportunidad a otro proceso y así sucesivamente. A esto se le denomina comúnmente como Planificación Round-Robin.'
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
-
-    <ImageButton
-        android:id="@+id/btnBack"
-        android:layout_width="52dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="116dp"
-        android:layout_marginBottom="61dp"
-        android:backgroundTint="#E9FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/izquierdo_36"
-        tools:srcCompat="@drawable/izquierdo_36" />
 
     <ImageButton
         android:id="@+id/btnNext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="61dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="28dp"
         android:backgroundTint="#E1FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnHome"
-        app:srcCompat="@drawable/derecho_36"
+        app:layout_constraintTop_toBottomOf="@+id/txtDefinition"
+        app:srcCompat="@android:drawable/ic_menu_send"
         tools:srcCompat="@drawable/derecho_36" />
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#E9FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDefinition"
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        tools:srcCompat="@drawable/izquierdo_36" />
 
     <ImageButton
         android:id="@+id/btnHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginBottom="61dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="28dp"
         android:backgroundTint="#D0FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnBack"
+        app:layout_constraintTop_toBottomOf="@+id/txtDefinition"
         app:srcCompat="@drawable/hogar_36" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
