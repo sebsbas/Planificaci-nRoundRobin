@@ -15,6 +15,14 @@
         <activity
             android:name=".Example"
             android:exported="false">
+
+        </activity>
+        <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        <activity
+            android:name=".Tehory3"
+            android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
