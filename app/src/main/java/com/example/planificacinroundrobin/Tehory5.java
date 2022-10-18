@@ -1,13 +1,10 @@
 package com.example.planificacinroundrobin;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultCallback;
@@ -31,13 +28,12 @@ public class Tehory5 extends AppCompatActivity {
             }
     );
 
-    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tehory5);
 
-        text = findViewById(R.id.txtDefinition5);
+        text = (EditText) findViewById(R.id.txtDefinition5);
         text.setKeyListener(null);
 
         btnNext = (ImageButton) findViewById(R.id.btnNext5);
