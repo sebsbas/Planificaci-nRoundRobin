@@ -9,44 +9,19 @@
 
     <TextView
         android:id="@+id/txtTitle3"
-        android:layout_width="271dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="40dp"
+        android:layout_width="174dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="110dp"
         android:background="#FBFBFB"
         android:backgroundTint="#CBD2FB"
-        android:text="Características:"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:text="Conceptos"
+        android:textColor="#0E174A"
+        android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/txtDefinition3"
-        android:layout_width="323dp"
-        android:layout_height="459dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="33dp"
-        android:layout_marginEnd="40dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
-        android:text="- A cada proceso se le asigna un intervalo de tiempo llamado Quantum (Q).
-\n\n
-- Cada proceso se ejecuta durante éste Quantum de tiempo.
-\n\n
-Cuando un proceso recibe la CPU, puede ocurrir que:
-\n\n
--El proceso tenga una ráfaga de CPU menor que el Quantum, donde el proceso terminara antes del
-Quantum y planifca un nuevo proceso.
-\n\n
--El proceso tenga una ráfaga de CPU mayoor que el Quantum, donde este se agota y es expulsado
-de la CPU dando paso a otro proceso."
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTitle3" />
 
     <ImageButton
         android:id="@+id/btnHome3"
@@ -86,5 +61,31 @@ de la CPU dando paso a otro proceso."
         app:layout_constraintEnd_toStartOf="@+id/btnHome3"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/izquierdo_36" />
+
+    <EditText
+        android:id="@+id/txtDefinition3"
+        android:layout_width="353dp"
+        android:layout_height="405dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="- Quantum: Es el número máximo de intervalos de tiempo que un proceso puede utilizar la CPU.\n\n - Tiempo de llegada(TL): Es el intervalo de tiempo en que comienza el proceso.\n\n - Tiempo de ejecución o Rafaga(TE): Es el intervalo de tiempo que demora el proceso en ejecutarse.\n\n- Tiempo de finalizacion(TF): Es el intervalo de tiempo en que termino el proceso.\n\n- Tiempo de retorno(TR): Es la suma de intervalos de tiempo que pasa desde que el proceso se lanza hasta que finaliza su ejecución."
+        android:textColor="#121010"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle3" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="238dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="84dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDefinition3"
+        app:srcCompat="@drawable/formula" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

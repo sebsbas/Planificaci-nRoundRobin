@@ -6,15 +6,59 @@
     android:layout_height="match_parent"
     tools:context=".Tehory2">
 
+    <EditText
+        android:id="@+id/txtDefinition2b"
+        android:layout_width="364dp"
+        android:layout_height="209dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="- A cada proceso se le asigna un intervalo de tiempo llamado Quantum (Q).\n
+- Cada proceso se ejecuta durante éste Quantum de tiempo.\n
+- La cola de procesos es circular y se gestiona como FIFO.\n
+-N es el número de procesos.\n
+-El tiempo de respuesta máximo es q(N-1)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle2b" />
+
+    <TextView
+        android:id="@+id/txtTitle2b"
+        android:layout_width="271dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="328dp"
+        android:layout_marginEnd="40dp"
+        android:background="#FBFBFB"
+        android:backgroundTint="#CBD2FB"
+        android:text="Características:"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#0E174A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageButton
         android:id="@+id/btnNext2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="442dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="248dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="50dp"
         android:backgroundTint="#E2FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/btnHome2"
-        app:layout_constraintTop_toBottomOf="@+id/txtDefinition2"
+        app:layout_constraintTop_toBottomOf="@+id/txtDefinition2a"
+        app:layout_constraintVertical_bias="0.99"
         app:srcCompat="@drawable/derecho_36"
         tools:srcCompat="@drawable/derecho_36" />
 
@@ -22,42 +66,52 @@
         android:id="@+id/btnHome2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="442dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="352dp"
         android:backgroundTint="#DAFFFFFF"
         app:layout_constraintStart_toEndOf="@+id/btnBack2"
-        app:layout_constraintTop_toBottomOf="@+id/txtDefinition2"
+        app:layout_constraintTop_toBottomOf="@+id/txtDefinition2a"
         app:srcCompat="@drawable/hogar_36" />
 
     <ImageButton
         android:id="@+id/btnBack2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="442dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="256dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="41dp"
         android:backgroundTint="#DFFFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnHome2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtDefinition2"
+        app:layout_constraintTop_toBottomOf="@+id/txtDefinition2a"
+        app:layout_constraintVertical_bias="0.897"
         app:srcCompat="@drawable/izquierdo_36"
         tools:srcCompat="@drawable/izquierdo_36" />
 
     <TextView
-        android:id="@+id/txtTitle2"
+        android:id="@+id/txtTitle2a"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="72dp"
+        android:layout_marginStart="84dp"
         android:layout_marginTop="28dp"
+        android:background="#FBFBFB"
+        android:backgroundTint="#CBD2FB"
         android:text="¿Cómo funciona?"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#0E174A"
+        android:textDirection="firstStrong"
+        android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/txtDefinition2"
-        android:layout_width="472dp"
-        android:layout_height="308dp"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="37dp"
+        android:id="@+id/txtDefinition2a"
+        android:layout_width="380dp"
+        android:layout_height="196dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
         android:editable="false"
         android:ems="10"
         android:gravity="start|top"
@@ -66,6 +120,6 @@
 \n2. Luego establecer el tiempo de llegada de cada proceso, el cual indica el tiempo en el que comienza el proceso (TL).
 \n3. Tambien un tiempo de rafaga el cual es el intervalo de tiempo que demora el proceso en ejecutarse (TR)."
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTitle2" />
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle2a" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
