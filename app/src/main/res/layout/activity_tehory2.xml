@@ -10,35 +10,35 @@
         android:id="@+id/btnBack2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="55dp"
-        android:layout_marginTop="237dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="420dp"
         android:backgroundTint="#DFFFFFFF"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine"
-        app:srcCompat="@android:drawable/ic_menu_revert"
+        app:layout_constraintTop_toBottomOf="@+id/txtDefinition2"
+        app:srcCompat="@drawable/izquierdo_36"
         tools:srcCompat="@drawable/izquierdo_36" />
 
     <ImageButton
         android:id="@+id/btnHome2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="237dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="420dp"
         android:backgroundTint="#DAFFFFFF"
         app:layout_constraintStart_toEndOf="@+id/btnBack2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine"
+        app:layout_constraintTop_toBottomOf="@+id/txtDefinition2"
         app:srcCompat="@drawable/hogar_36" />
 
     <ImageButton
         android:id="@+id/btnNext2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="38dp"
-        android:layout_marginTop="237dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="420dp"
         android:backgroundTint="#E2FFFFFF"
         app:layout_constraintStart_toEndOf="@+id/btnHome2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine"
-        app:srcCompat="@android:drawable/ic_menu_send"
+        app:layout_constraintTop_toBottomOf="@+id/txtDefinition2"
+        app:srcCompat="@drawable/derecho_36"
         tools:srcCompat="@drawable/derecho_36" />
 
     <TextView
@@ -53,15 +53,20 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextMultiLine"
-        android:layout_width="381dp"
-        android:layout_height="301dp"
+        android:id="@+id/txtDefinition2"
+        android:layout_width="465dp"
+        android:layout_height="317dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="36dp"
         android:editable="false"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
-        android:text="Primero debes establecer un numero Cuantum (Q)                                                                     Luego establecer el tiempo de llegada de cada proceso, el cual indica el tiempo en el que comienza el proceso (TL).                                                                    Tambien un tiempo de rafaga el cual es el intervalo de tiempo que demora el proceso en ejecutarse (TR).                                                           "
-        tools:layout_editor_absoluteX="11dp"
-        tools:layout_editor_absoluteY="110dp" />
+        android:text="1. Primero debes establecer un numero Cuantum (Q)
+        \n2. Luego establecer el tiempo de llegada de cada proceso, el cual indica el tiempo en el que comienza el proceso (TL).
+        \n3. Tambien un tiempo de rafaga el cual es el intervalo de tiempo que demora el proceso en ejecutarse (TR).
+        "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

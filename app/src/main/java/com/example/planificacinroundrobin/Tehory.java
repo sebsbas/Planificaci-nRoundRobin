@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageButton;
 
 public class Tehory extends AppCompatActivity {
@@ -16,6 +17,7 @@ public class Tehory extends AppCompatActivity {
     private ImageButton btnContinue;
     private ImageButton btnHome;
     private ImageButton btnRestore;
+    private EditText text;
 
     ActivityResultLauncher<Intent> activityLauncher=registerForActivityResult(
             new ActivityResultContracts.StartActivityForResult(),
@@ -31,7 +33,8 @@ public class Tehory extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tehory);
-
+        text = (EditText) findViewById(R.id.txtDefinition);
+        text.setKeyListener(null);
         btnContinue = (ImageButton) findViewById(R.id.btnNext);
         btnContinue.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,6 +48,17 @@ public class Tehory extends AppCompatActivity {
 
         btnRestore = (ImageButton) findViewById(R.id.btnBack);
         btnRestore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Tehory.this, MainActivity.class);
+
+                activityLauncher.launch(intent);
+
+            }
+        });
+
+        btnHome = (ImageButton) findViewById(R.id.btnHome);
+        btnHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Tehory.this, MainActivity.class);

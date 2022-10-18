@@ -9,18 +9,18 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="568dp"
+        android:layout_height="973dp"
         app:srcCompat="@drawable/fondo"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
+        tools:layout_editor_absoluteX="-10dp"
+        tools:layout_editor_absoluteY="-5dp" />
 
     <TextView
         android:id="@+id/txtWelcome"
-        android:layout_width="341dp"
-        android:layout_height="235dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="76dp"
+        android:layout_width="443dp"
+        android:layout_height="225dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="44dp"
         android:background="#00DDC6C6"
         android:backgroundTint="#FAFAFA"
         android:foregroundTint="#C33535"
@@ -36,8 +36,8 @@
         android:id="@+id/btnContinue"
         android:layout_width="154dp"
         android:layout_height="115dp"
-        android:layout_marginStart="136dp"
-        android:layout_marginTop="224dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="420dp"
         android:backgroundTint="#005A1851"
         android:scaleType="centerCrop"
         android:tag="Continuar"
