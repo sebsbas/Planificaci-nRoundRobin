@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1D0FD">
+
+    <ImageButton
+        android:id="@+id/btnHome7"
+        android:layout_width="82dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="35dp"
+        android:backgroundTint="#FFFCFC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnBack7"
+        app:srcCompat="@drawable/hogar_36" />
+
+    <ImageButton
+        android:id="@+id/btnBack7"
+        android:layout_width="73dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginBottom="35dp"
+        android:backgroundTint="#FFFCFC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/izquierdo_36" />
+
+    <ImageButton
+        android:id="@+id/btnNext7"
+        android:layout_width="76dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="35dp"
+        android:backgroundTint="#FFFCFC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnHome7"
+        app:srcCompat="@drawable/derecho_36" />
+
+    <TextView
+        android:id="@+id/txtTitle7"
+        android:layout_width="187dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="56dp"
+        android:text="Referencias"
+        android:textColor="#102C5A"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtReferencias"
+        android:layout_width="355dp"
+        android:layout_height="346dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="•-http://sistop.gwolf.org/html/03_planificacion_de_procesos.html#sec-2-2\n
+        -https://es.scribd.com/document/43780105/Agoritmo-de-Planificacion-Round-Robin\n
+        -http://lsi.vc.ehu.es/pablogn/docencia/manuales/SO/TemasSOuJaen/PLANIFICACIONDEPROCESOS/6AlgoritmosdePlanificacionI.html\n
+        -http://www3.uji.es/~redondo/so/capitulo2_IS11.pdf\n
+        -http://www.sc.ehu.es/acwlaroa/SO2/Apuntes/Cap3.pdf <– Eficiencia del algortimo\n
+        -https://es.scribd.com/doc/43776541/ALGORITMO-DE-PLANIFICACION-DE-PROCESOS\n "
+        android:textColor="#0B0A0A"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle7" />
+</androidx.constraintlayout.widget.ConstraintLayout>
