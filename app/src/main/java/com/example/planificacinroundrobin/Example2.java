@@ -11,8 +11,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.TableLayout;
-import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -58,8 +56,6 @@ public class Example2 extends AppCompatActivity {
             r2 = Integer.parseInt(sr2.toString());
             String sr3 = bundle.getString("r3");
             r3 = Integer.parseInt(sr3.toString());
-
-            System.out.println(q+""+l1+""+l2+""+l3);
 
             turno = findViewById(R.id.txtTurno);
             rIni = findViewById(R.id.txtRInicial);
@@ -130,82 +126,79 @@ public class Example2 extends AppCompatActivity {
                     pos++;
                     switch(currentPos[pos-1]){
                         case 1:
-                            System.out.println("case 1");
                             if(!p1){
-                                if(l1>q){
+                                if(r1>q){
                                     et+=q;
                                     turno.setText("Proceso 1");
-                                    rIni.setText(l1);
-                                    l1-=q;
-                                    rFin.setText(l1);
+                                    rIni.setText(""+r1+"");
+                                    r1-=q;
+                                    rFin.setText(""+r1+"");
                                     e1+=r1;
-                                    tEs.setText(e1);
+                                    tEs.setText(""+e1+"");
                                     tFin.setText("No finalizado");
                                 }else{
                                     et+=r1;
                                     turno.setText("Proceso 1");
-                                    rIni.setText(l1);
-                                    l1-=r1;
-                                    rFin.setText(l1);
+                                    rIni.setText(""+r1+"");
+                                    r1-=r1;
+                                    rFin.setText(""+r1+"");
                                     ret1+=(e1+r1);
                                     e1+=r1;
-                                    tEs.setText(e1);
+                                    tEs.setText(""+e1+"");
                                     f1=et;
-                                    tFin.setText(f1);
+                                    tFin.setText(""+f1+"");
                                     p1=true;
                                 }
                             }
                             break;
 
                         case 2:
-                            System.out.println("case 2");
                             if(!p2){
-                                if(l2>q){
+                                if(r2>q){
                                     et+=q;
                                     turno.setText("Proceso 2");
-                                    rIni.setText(l2);
-                                    l2-=q;
-                                    rFin.setText(l2);
+                                    rIni.setText(""+r2+"");
+                                    Example2.this.r2 -=q;
+                                    rFin.setText(""+r2+"");
                                     e2+=r2;
-                                    tEs.setText(e2);
+                                    tEs.setText(""+e2+"");
                                     tFin.setText("No finalizado");
                                 }else{
                                     et+=r2;
                                     turno.setText("Proceso 2");
-                                    rIni.setText(l2);
-                                    l2-=r2;
-                                    rFin.setText(l2);
+                                    rIni.setText(""+r2+"");
+                                    r2-=r2;
+                                    rFin.setText(""+r2+"");
                                     e2+=r2;
-                                    tEs.setText(e2);
+                                    tEs.setText(""+e2+"");
                                     f2=et;
-                                    tFin.setText(f2);
+                                    tFin.setText(""+f2+"");
                                     p2=true;
                                 }
                             }
                             break;
 
                         case 3:
-                            System.out.println("case 3");
                             if(!p3){
-                                if(l3>q){
+                                if(r3>q){
                                     et+=q;
                                     turno.setText("Proceso 3");
-                                    rIni.setText(l3);
-                                    l3-=q;
-                                    rFin.setText(l3);
+                                    rIni.setText(""+r3+"");
+                                    r3-=q;
+                                    rFin.setText(""+r3+"");
                                     e3+=r3;
-                                    tEs.setText(e3);
+                                    tEs.setText(""+e3+"");
                                     tFin.setText("No finalizado");
                                 }else{
                                     et+=r3;
                                     turno.setText("Proceso 3");
-                                    rIni.setText(l3);
-                                    l3-=r3;
-                                    rFin.setText(l3);
+                                    rIni.setText(""+r3+"");
+                                    r3-=r3;
+                                    rFin.setText(""+r3+"");
                                     e3+=r3;
-                                    tEs.setText(e3);
+                                    tEs.setText(""+e3+"");
                                     f3=et;
-                                    tFin.setText(f3);
+                                    tFin.setText(""+f3+"");
                                     p3=true;
                                 }
                             }
@@ -220,17 +213,18 @@ public class Example2 extends AppCompatActivity {
                     }
                 }catch (Exception e){
                     System.out.println(e.toString());
+                    System.out.println(e.getMessage());
                 }
 
             }
         });
 
-        ImageButton btnNext = (ImageButton) findViewById(R.id.btnNext7);
+        ImageButton btnNext = (ImageButton) findViewById(R.id.btnNext8);
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 try {
-                    Intent intent = new Intent(Example2.this, Creditos.class);
+                    Intent intent = new Intent(Example2.this, Referencias.class);
                     activityLauncher.launch(intent);
                 }catch (Exception e){
                     System.out.println(e.toString());
@@ -240,7 +234,7 @@ public class Example2 extends AppCompatActivity {
             }
         });
 
-        ImageButton btnRestore = (ImageButton) findViewById(R.id.btnBack7);
+        ImageButton btnRestore = (ImageButton) findViewById(R.id.btnBack8);
         btnRestore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -251,7 +245,7 @@ public class Example2 extends AppCompatActivity {
             }
         });
 
-        ImageButton btnHome = (ImageButton) findViewById(R.id.btnHome7);
+        ImageButton btnHome = (ImageButton) findViewById(R.id.btnHome8);
         btnHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -30,9 +30,6 @@ public class Example extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_example);
 
-        EditText text = (EditText) findViewById(R.id.txtInstructions);
-        text.setKeyListener(null);
-
         final EditText cuantum;
         cuantum = findViewById(R.id.editTxtQ);
 

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#C6D4D6"
     tools:context=".Example2">
 
     <TextView
@@ -101,39 +102,40 @@
         app:layout_constraintTop_toBottomOf="@+id/tblInf" />
 
     <ImageButton
-        android:id="@+id/btnNext7"
+        android:id="@+id/btnNext8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
         android:layout_marginBottom="32dp"
-        android:backgroundTint="#E2FFFFFF"
+        android:backgroundTint="#03FFFFFF"
         android:contentDescription="Next"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnHome7"
+        app:layout_constraintStart_toEndOf="@+id/btnHome8"
         app:srcCompat="@drawable/derecho_36"
         tools:ignore="SpeakableTextPresentCheck"
         tools:srcCompat="@drawable/derecho_36" />
 
     <ImageButton
-        android:id="@+id/btnHome7"
+        android:id="@+id/btnHome8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
         android:layout_marginBottom="32dp"
-        android:backgroundTint="#DAFFFFFF"
+        android:backgroundTint="#00FFFFFF"
         android:contentDescription="Home"
+        app:tint="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnBack7"
+        app:layout_constraintStart_toEndOf="@+id/btnBack8"
         app:srcCompat="@drawable/hogar_36"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
-        android:id="@+id/btnBack7"
+        android:id="@+id/btnBack8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
         android:layout_marginBottom="32dp"
-        android:backgroundTint="#DFFFFFFF"
+        android:backgroundTint="#00FFFFFF"
         android:contentDescription="Back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -147,11 +149,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="124dp"
         android:layout_marginBottom="64dp"
-        android:background="#009688"
+        android:background="#2B857C"
         android:backgroundTint="#FC330E0E"
         android:text="Siguiente estado"
-        app:layout_constraintBottom_toTopOf="@+id/btnHome7"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:iconTint="#35A9B8"
+        app:layout_constraintBottom_toTopOf="@+id/btnHome8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#A3B0DD" />
 
     <TableLayout
         android:id="@+id/tblInf"
