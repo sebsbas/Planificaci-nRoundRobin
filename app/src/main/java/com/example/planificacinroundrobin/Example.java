@@ -54,12 +54,6 @@ public class Example extends AppCompatActivity {
         final EditText tR3;
         tR3 = findViewById(R.id.editTxtTR3);
 
-
-        /*for (e:Elem) {
-
-        }*/
-
-
         ImageButton btnNext = (ImageButton) findViewById(R.id.btnNext3);
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,9 +63,14 @@ public class Example extends AppCompatActivity {
                     if(Elem[0]<0 || Elem[1]<0 || Elem[2]<0 || Elem[3]<0 || Elem[4]<0 || Elem[5]<0 || Elem[6]<0){
                         Toast.makeText(Example.this, "Los números deben ser positivos", Toast.LENGTH_SHORT).show();
                     }else{
-                        System.out.println(Elem.length + " elementos");
                         Intent intent = new Intent(Example.this, Example2.class);
                         intent.putExtra("quantum", cuantum.getText().toString());
+                        intent.putExtra("l1", tLl1.getText().toString());
+                        intent.putExtra("l2", tLl2.getText().toString());
+                        intent.putExtra("l3", tLl3.getText().toString());
+                        intent.putExtra("r1", tR1.getText().toString());
+                        intent.putExtra("r2", tR2.getText().toString());
+                        intent.putExtra("r3", tR3.getText().toString());
                         activityLauncher.launch(intent);
                     }
 

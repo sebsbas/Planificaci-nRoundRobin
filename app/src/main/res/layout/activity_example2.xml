@@ -6,4 +6,283 @@
     android:layout_height="match_parent"
     tools:context=".Example2">
 
+    <TextView
+        android:id="@+id/textTituFinales"
+        android:layout_width="313dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFinalizacion" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="244dp"
+        android:text="TIEMPO DE FINALIZACIÓN:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tblInf" />
+
+    <TextView
+        android:id="@+id/txtTurno"
+        android:layout_width="77dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tblInf" />
+
+    <TextView
+        android:id="@+id/txtFinalizacion"
+        android:layout_width="77dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="224dp"
+        android:layout_marginTop="244dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tblInf" />
+
+    <TextView
+        android:id="@+id/txtTEspera"
+        android:layout_width="77dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="192dp"
+        android:layout_marginTop="192dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tblInf" />
+
+    <TextView
+        android:id="@+id/txtRInicial"
+        android:layout_width="77dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="96dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tblInf" />
+
+    <TextView
+        android:id="@+id/txtRFinal"
+        android:layout_width="77dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="144dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tblInf" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="192dp"
+        android:text="TIEMPO DE ESPERA:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tblInf" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="144dp"
+        android:text="RAFAGA FINAL:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tblInf" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="96dp"
+        android:text="RAFAGA INICIAL:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tblInf" />
+
+    <ImageButton
+        android:id="@+id/btnNext7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#E2FFFFFF"
+        android:contentDescription="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnHome7"
+        app:srcCompat="@drawable/derecho_36"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:srcCompat="@drawable/derecho_36" />
+
+    <ImageButton
+        android:id="@+id/btnHome7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#DAFFFFFF"
+        android:contentDescription="Home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnBack7"
+        app:srcCompat="@drawable/hogar_36"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/btnBack7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#DFFFFFFF"
+        android:contentDescription="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/izquierdo_36"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:srcCompat="@drawable/izquierdo_36" />
+
+    <Button
+        android:id="@+id/btnSig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginBottom="64dp"
+        android:background="#009688"
+        android:backgroundTint="#FC330E0E"
+        android:text="Siguiente estado"
+        app:layout_constraintBottom_toTopOf="@+id/btnHome7"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tblInf"
+        android:layout_width="414dp"
+        android:layout_height="166dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="80dp"
+                android:padding="3dip"
+                android:text="Nº de Proceso" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:padding="3dip"
+                android:text="TIEMPO DE LLEGADA"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:padding="3dip"
+                android:text="TIEMPO DE RAFAGA"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="90dp"
+                android:padding="3dip"
+                android:text="QUANTUM"
+                android:textAlignment="center" />
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/row1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:padding="5dip"
+                android:text="Proceos 1" />
+
+            <TextView
+                android:id="@+id/llegada1"
+                android:padding="5dip"
+                android:text="llegada 1"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/rafaga1"
+                android:padding="5dip"
+                android:text="rafaga1"
+                android:textAlignment="center" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/row2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:padding="5dip"
+                android:text="Proceos 2" />
+
+            <TextView
+                android:id="@+id/llegada2"
+                android:padding="5dip"
+                android:text="llegada2"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/rafaga2"
+                android:padding="5dip"
+                android:text="rafaga2"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/quantum"
+                android:padding="5dip"
+                android:text="quantum"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:padding="5dip"
+                android:text="Proceos 3" />
+
+            <TextView
+                android:id="@+id/llegada3"
+                android:padding="5dip"
+                android:text="llegada3"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/rafaga3"
+                android:padding="5dip"
+                android:text="rafaga3"
+                android:textAlignment="center" />
+
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="52dp"
+        android:text="TURNO:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tblInf" />
+
+    <TextView
+        android:id="@+id/textPuestosFinales"
+        android:layout_width="315dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="139dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFinalizacion" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
