@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C8C9FA"
     tools:context=".Creditos">
 
     <ImageButton
@@ -15,11 +14,11 @@
         android:layout_marginBottom="32dp"
         android:backgroundTint="#FFFCFC"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnHome7"
+        app:layout_constraintStart_toEndOf="@+id/btnHome6"
         app:srcCompat="@drawable/derecho_36" />
 
     <ImageButton
-        android:id="@+id/btnHome7"
+        android:id="@+id/btnHome6"
         android:layout_width="65dp"
         android:layout_height="62dp"
         android:layout_marginStart="52dp"
@@ -46,24 +45,19 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="93dp"
         android:layout_marginTop="44dp"
-        android:layout_marginEnd="94dp"
         android:text="Créditos"
         android:textAppearance="@style/TextAppearance.AppCompat.Display3"
-        android:textColor="#0C554E"
         android:textSize="60sp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/txtNombres"
-        android:layout_width="334dp"
-        android:layout_height="219dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="28dp"
-        android:text="Integrantes: \n\n-Sebastian Piñeros Garzon  \n-Dana Lozano Delgadillo \n-Daniel Felipe Rodríguez"
-        android:textColor="#090F30"
-        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:text="Integrantes: \n\n Sebastian Piñeros Garzon  \n Dana Valentina Lozano \n Daniel Felipe Rodríguez"
+        android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
