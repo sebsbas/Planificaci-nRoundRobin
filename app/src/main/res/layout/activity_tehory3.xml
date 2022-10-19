@@ -17,7 +17,7 @@
         android:background="#FBFBFB"
         android:backgroundTint="#CBD2FB"
         android:text="Conceptos"
-        android:textColor="#0E174A"
+        android:textColor="#131F65"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,7 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
         android:layout_marginBottom="32dp"
-        android:backgroundTint="#FFFCFC"
+        android:backgroundTint="#00FFFCFC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnHome3"
         app:srcCompat="@drawable/derecho_36" />
@@ -74,13 +74,13 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="359dp"
-        android:layout_height="213dp"
+        android:layout_width="280dp"
+        android:layout_height="92dp"
         android:layout_marginStart="84dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="84dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintHorizontal_bias="0.764"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtDefinition3"
         app:srcCompat="@drawable/formula" />

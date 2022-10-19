@@ -4,32 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#C6D4D6"
+    android:foregroundTint="#B0DADF"
     tools:context=".Example">
-
-    <ImageButton
-        android:id="@+id/btnBack3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="124dp"
-        android:layout_marginTop="200dp"
-        android:backgroundTint="#DFFFFFFF"
-        android:contentDescription="Back"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTxtTR3"
-        app:srcCompat="@drawable/izquierdo_36"
-        tools:ignore="SpeakableTextPresentCheck"
-        tools:srcCompat="@drawable/izquierdo_36" />
 
     <ImageButton
         android:id="@+id/btnNext3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="200dp"
-        android:backgroundTint="#E2FFFFFF"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#00FFFFFF"
         android:contentDescription="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnHome3"
-        app:layout_constraintTop_toBottomOf="@+id/editTxtTR3"
         app:srcCompat="@drawable/derecho_36"
         tools:ignore="SpeakableTextPresentCheck"
         tools:srcCompat="@drawable/derecho_36" />
@@ -39,60 +27,60 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
-        android:layout_marginTop="200dp"
-        android:backgroundTint="#DAFFFFFF"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#1BFFFFFF"
         android:contentDescription="Home"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnBack3"
-        app:layout_constraintTop_toBottomOf="@+id/editTxtTR3"
         app:srcCompat="@drawable/hogar_36"
         tools:ignore="SpeakableTextPresentCheck" />
 
-    <TextView
-        android:id="@+id/txtTitle2a"
+    <ImageButton
+        android:id="@+id/btnBack3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#16FFFFFF"
+        android:contentDescription="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/izquierdo_36"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:srcCompat="@drawable/izquierdo_36" />
+
+    <TextView
+        android:id="@+id/txtTitle2a"
+        android:layout_width="371dp"
+        android:layout_height="87dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:background="#BFD0ED"
         android:text="@string/hagamos_un_ejemplo_practico"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#192253"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTxtQ"
-        android:layout_width="237dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:ems="10"
-        android:hint="@string/digite_el_cuantum"
-        android:inputType="numberSigned"
-        android:textColorHint="#757575"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTitle2a"
-        android:importantForAutofill="no" />
-
-    <EditText
-        android:id="@+id/editTxtTL1"
-        android:layout_width="358dp"
+        android:id="@+id/editTxtTL2"
+        android:layout_width="355dp"
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="12dp"
         android:ems="10"
-        android:hint="@string/digite_el_tiempo_de_llegada_del_proceso_1"
+        android:hint="@string/digite_el_tiempo_de_llegada_del_proceso_2"
         android:importantForAutofill="no"
         android:inputType="numberSigned"
         android:textColorHint="#757575"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTxtQ" />
+        app:layout_constraintTop_toBottomOf="@+id/editTxtTR" />
 
     <EditText
         android:id="@+id/editTxtTL3"
         android:layout_width="355dp"
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="32dp"
         android:ems="10"
         android:hint="@string/digite_el_tiempo_de_llegada_del_proceso_3"
         android:importantForAutofill="no"
@@ -106,7 +94,7 @@
         android:layout_width="355dp"
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="32dp"
         android:ems="10"
         android:hint="@string/digite_el_tiempo_de_rafaga_del_proceso_3"
         android:importantForAutofill="no"
@@ -116,39 +104,11 @@
         app:layout_constraintTop_toBottomOf="@+id/editTxtTL3" />
 
     <EditText
-        android:id="@+id/editTxtTL2"
-        android:layout_width="355dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="40dp"
-        android:ems="10"
-        android:hint="@string/digite_el_tiempo_de_llegada_del_proceso_2"
-        android:importantForAutofill="no"
-        android:inputType="numberSigned"
-        android:textColorHint="#757575"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTxtTR" />
-
-    <EditText
-        android:id="@+id/editTxtTR2"
-        android:layout_width="355dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:ems="10"
-        android:hint="@string/digite_el_tiempo_de_rafaga_del_proceso_2"
-        android:importantForAutofill="no"
-        android:inputType="numberSigned"
-        android:textColorHint="#757575"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTxtTL2" />
-
-    <EditText
         android:id="@+id/editTxtTR"
         android:layout_width="356dp"
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="@string/digite_el_tiempo_de_rafaga_del_proceso_1"
         android:importantForAutofill="no"
@@ -158,17 +118,45 @@
         app:layout_constraintTop_toBottomOf="@+id/editTxtTL1" />
 
     <EditText
-        android:id="@+id/txtInstructions"
-        android:layout_width="444dp"
-        android:layout_height="83dp"
+        android:id="@+id/editTxtTL1"
+        android:layout_width="358dp"
+        android:layout_height="48dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="56dp"
-        android:clickable="false"
+        android:layout_marginTop="20dp"
         android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
-        android:text="Recuerde que el tiempo de llegada debe ser un número positivo, es la única regla."
+        android:hint="@string/digite_el_tiempo_de_llegada_del_proceso_1"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned"
+        android:textColorHint="#757575"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTxtTR3" />
+        app:layout_constraintTop_toBottomOf="@+id/editTxtQ" />
+
+    <EditText
+        android:id="@+id/editTxtQ"
+        android:layout_width="237dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/digite_el_cuantum"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned"
+        android:textColorHint="#757575"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle2a" />
+
+    <EditText
+        android:id="@+id/editTxtTR2"
+        android:layout_width="355dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/digite_el_tiempo_de_rafaga_del_proceso_2"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned"
+        android:textColorHint="#757575"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtTL2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

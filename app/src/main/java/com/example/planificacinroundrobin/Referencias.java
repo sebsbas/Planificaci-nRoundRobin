@@ -31,8 +31,19 @@ public class Referencias extends AppCompatActivity {
         EditText text = (EditText) findViewById(R.id.txtReferencias);
         text.setKeyListener(null);
 
-        ImageButton btnNext = (ImageButton) findViewById(R.id.btnNext7);
+        ImageButton btnNext = (ImageButton) findViewById(R.id.btnNext8);
         btnNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Referencias.this, Creditos.class);
+
+                activityLauncher.launch(intent);
+
+            }
+        });
+
+        ImageButton btnRestore = (ImageButton) findViewById(R.id.btnBack8);
+        btnRestore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Referencias.this, Example.class);
@@ -42,18 +53,7 @@ public class Referencias extends AppCompatActivity {
             }
         });
 
-        ImageButton btnRestore = (ImageButton) findViewById(R.id.btnBack7);
-        btnRestore.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Referencias.this, Referencias.class);
-
-                activityLauncher.launch(intent);
-
-            }
-        });
-
-        ImageButton btnHome = (ImageButton) findViewById(R.id.btnHome7);
+        ImageButton btnHome = (ImageButton) findViewById(R.id.btnHome8);
         btnHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

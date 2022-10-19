@@ -82,14 +82,14 @@ public class Creditos extends AppCompatActivity {
         btnRestore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Creditos.this, Tehory3.class);
+                Intent intent = new Intent(Creditos.this, Referencias.class);
 
                 activityLauncher.launch(intent);
 
             }
         });
 
-        btnHome = (ImageButton) findViewById(R.id.btnHome7);
+        btnHome = (ImageButton) findViewById(R.id.btnHome6);
         btnHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -9,11 +9,11 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="568dp"
-        android:layout_height="973dp"
-        app:srcCompat="@drawable/fondo"
-        tools:layout_editor_absoluteX="-10dp"
-        tools:layout_editor_absoluteY="-5dp" />
+        android:layout_width="566dp"
+        android:layout_height="991dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fondo" />
 
     <TextView
         android:id="@+id/txtWelcome"
@@ -26,7 +26,7 @@
         android:foregroundTint="#C33535"
         android:text="Planificación Round Robin"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="#9F9191"
+        android:textColor="#EFEFEF"
         app:autoSizeTextType="uniform"
         app:drawableTint="#FFEB3B"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,12 +36,12 @@
         android:id="@+id/btnContinue"
         android:layout_width="154dp"
         android:layout_height="115dp"
-        android:layout_marginStart="128dp"
-        android:layout_marginTop="324dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="300dp"
         android:backgroundTint="#005A1851"
         android:scaleType="centerCrop"
         android:tag="Continuar"
-        android:tint="#7C000000"
+        app:tint="#7C000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtWelcome"
         app:srcCompat="@android:drawable/ic_menu_send" />

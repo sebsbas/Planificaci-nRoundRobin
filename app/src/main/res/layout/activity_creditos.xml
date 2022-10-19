@@ -4,18 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#CDEEF3"
     tools:context=".Creditos">
 
     <ImageButton
-        android:id="@+id/btnNext6"
+        android:id="@+id/btnSalir"
         android:layout_width="60dp"
         android:layout_height="64dp"
         android:layout_marginStart="52dp"
         android:layout_marginBottom="32dp"
-        android:backgroundTint="#FFFCFC"
+        android:backgroundTint="#00FFFCFC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnHome6"
-        app:srcCompat="@drawable/derecho_36" />
+        app:srcCompat="@drawable/exit" />
 
     <ImageButton
         android:id="@+id/btnHome6"
@@ -23,7 +24,7 @@
         android:layout_height="62dp"
         android:layout_marginStart="52dp"
         android:layout_marginBottom="32dp"
-        android:backgroundTint="#FFFCFC"
+        android:backgroundTint="#00FFFCFC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnBack6"
         app:srcCompat="@drawable/hogar_36" />
@@ -34,7 +35,7 @@
         android:layout_height="59dp"
         android:layout_marginStart="80dp"
         android:layout_marginBottom="32dp"
-        android:backgroundTint="#FFFCFC"
+        android:backgroundTint="#00FFFCFC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/izquierdo_36" />
@@ -47,7 +48,9 @@
         android:layout_marginTop="44dp"
         android:text="Créditos"
         android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="#131E61"
         android:textSize="60sp"
+        app:drawableTint="#0A0A83"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -55,9 +58,10 @@
         android:id="@+id/txtNombres"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="3dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="48dp"
         android:text="Integrantes: \n\n Sebastian Piñeros Garzon  \n Dana Valentina Lozano \n Daniel Felipe Rodríguez"
-        android:textSize="34sp"
+        android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
