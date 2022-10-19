@@ -7,15 +7,15 @@
     tools:context=".Creditos">
 
     <ImageButton
-        android:id="@+id/btnNext6"
-        android:layout_width="60dp"
-        android:layout_height="64dp"
+        android:id="@+id/btnSalir"
+        android:layout_width="89dp"
+        android:layout_height="71dp"
         android:layout_marginStart="52dp"
         android:layout_marginBottom="32dp"
         android:backgroundTint="#FFFCFC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnHome6"
-        app:srcCompat="@drawable/derecho_36" />
+        app:srcCompat="@drawable/exit" />
 
     <ImageButton
         android:id="@+id/btnHome6"
