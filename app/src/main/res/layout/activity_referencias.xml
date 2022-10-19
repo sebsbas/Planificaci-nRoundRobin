@@ -67,7 +67,7 @@
         -http://www.sc.ehu.es/acwlaroa/SO2/Apuntes/Cap3.pdf <– Eficiencia del algortimo\n
         -https://es.scribd.com/doc/43776541/ALGORITMO-DE-PLANIFICACION-DE-PROCESOS\n "
         android:textColor="#0B0A0A"
-        android:textSize="14sp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTitle7" />
 </androidx.constraintlayout.widget.ConstraintLayout>
