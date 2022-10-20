@@ -14,6 +14,7 @@
         android:layout_marginEnd="140dp"
         android:background="#FBFBFB"
         android:backgroundTint="#CBD2FB"
+        android:gravity="center"
         android:text="Otros conceptos"
         android:textColor="#0E174A"
         android:textDirection="locale"
@@ -28,7 +29,7 @@
         android:layout_width="313dp"
         android:layout_height="92dp"
         android:layout_marginStart="44dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="44dp"
         android:ems="10"
         android:gravity="start|top"
@@ -36,7 +37,7 @@
         android:text="- Tiempo de espera(TES): Es la suma de intervalos de tiempo que esta un proceso en la cola de procesos listo."
         android:textColor="#090808"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTitle4" />
 
@@ -74,7 +75,7 @@
         android:layout_height="62dp"
         android:layout_marginStart="52dp"
         android:layout_marginBottom="32dp"
-        android:backgroundTint="#FFFCFC"
+        android:backgroundTint="#00FFFCFC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnBack4"
         app:srcCompat="@drawable/hogar_36" />
@@ -85,7 +86,7 @@
         android:layout_height="60dp"
         android:layout_marginStart="80dp"
         android:layout_marginBottom="32dp"
-        android:backgroundTint="#FFFCFC"
+        android:backgroundTint="#00FFFCFC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/izquierdo_36" />
@@ -96,7 +97,7 @@
         android:layout_height="58dp"
         android:layout_marginStart="52dp"
         android:layout_marginBottom="32dp"
-        android:backgroundTint="#FFFCFC"
+        android:backgroundTint="#00FFFCFC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnHome4"
         app:srcCompat="@drawable/derecho_36" />

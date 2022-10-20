@@ -45,6 +45,7 @@
         android:layout_height="159dp"
         android:layout_marginStart="48dp"
         android:layout_marginTop="44dp"
+        android:gravity="center"
         android:text="Análisis del algoritmo de Round Robin"
         android:textColor="#131F67"
         android:textSize="34sp"
@@ -61,6 +62,7 @@
         android:gravity="start|top"
         android:inputType="textMultiLine"
         android:text="Si el quantum es mas grande todo proceso terminara su ejecución dentro del quantum y entre mas grande sea el quantum el algoritmo terminara siendo un FCFS Si el quantum es q>=0 llevara a la ilusión de tener un procesador dedicado para cada proceso con una velocidad de 1/N de la del procesador real donde N es el numero de procesos, ya que el proceso es incapaz de notar la ráfaga.\n\nSi es quamtum es muy pequeño el rendimiento también se ve reducido y ocurren mas cambio de contexto."
+        android:textColor="#0C0C0C"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTitle5" />
 
