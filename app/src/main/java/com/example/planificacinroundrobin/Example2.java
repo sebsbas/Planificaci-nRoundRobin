@@ -61,6 +61,7 @@ public class Example2 extends AppCompatActivity {
             rIni = findViewById(R.id.txtRInicial);
             rFin = findViewById(R.id.txtRFinal);
             tEs = findViewById(R.id.txtTEspera);
+            tFin = findViewById(R.id.txtFinalizacion);
             PFin = findViewById(R.id.textPuestosFinales);
 
 
@@ -127,7 +128,10 @@ public class Example2 extends AppCompatActivity {
                     switch(currentPos[pos-1]){
                         case 1:
                             if(!p1){
+                                Toast.makeText(Example2.this, "caso 1", Toast.LENGTH_SHORT).show();
                                 if(r1>q){
+                                    Toast.makeText(Example2.this, "caso 1 a", Toast.LENGTH_SHORT).show();
+
                                     et+=q;
                                     turno.setText("Proceso 1");
                                     rIni.setText(""+r1+"");
@@ -164,6 +168,8 @@ public class Example2 extends AppCompatActivity {
                                     tEs.setText(""+e2+"");
                                     tFin.setText("No finalizado");
                                 }else{
+                                    Toast.makeText(Example2.this, "caso 2 b", Toast.LENGTH_SHORT).show();
+
                                     et+=r2;
                                     turno.setText("Proceso 2");
                                     rIni.setText(""+r2+"");
@@ -204,9 +210,9 @@ public class Example2 extends AppCompatActivity {
                             }
                             break;
                     }
-                    if(pos==3){
+                    if(pos>2){
                         pos=0;
-                    }else if(p1 && p2 &&p3){
+                    }else if(p1 && p2 && p3){
                         TextView title = findViewById(R.id.textTituFinales);
                         title.setText("Tiempos finales de los procesos");
                         PFin.setText("P1: "+f1+"  P2:"+f2+"   p3:"+f3);

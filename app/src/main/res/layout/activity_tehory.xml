@@ -26,8 +26,8 @@
 
     <EditText
         android:id="@+id/txtDefinition"
-        android:layout_width="384dp"
-        android:layout_height="483dp"
+        android:layout_width="381dp"
+        android:layout_height="499dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:clickable="false"

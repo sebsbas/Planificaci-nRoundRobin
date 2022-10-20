@@ -13,11 +13,13 @@
         <entry key="..\:/Users/administradorPC/Documents/Nueva carpeta/Planificaci-nRoundRobin/app/src/main/res/layout/activity_tehory3.xml" value="0.25" />
         <entry key="..\:/Users/administradorPC/Documents/Nueva carpeta/Planificaci-nRoundRobin/app/src/main/res/layout/activity_tehory4.xml" value="0.11041666666666666" />
         <entry key="..\:/Users/administradorPC/Documents/Nueva carpeta/Planificaci-nRoundRobin/app/src/main/res/layout/activity_tehory5.xml" value="0.11041666666666666" />
+        <entry key="app/src/main/res/layout/activity_example2.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_tehory.xml" value="0.14673913043478262" />
       </map>
     </option>
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
