@@ -5,15 +5,14 @@ import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.Toast;
 
 public class Creditos extends AppCompatActivity {
 
@@ -37,11 +36,14 @@ public class Creditos extends AppCompatActivity {
         setContentView(R.layout.activity_creditos);
 
 
+
+
+
         btnSalir = (ImageButton) findViewById(R.id.btnSalir);
         btnSalir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                System.out.println("Entró");
+
                 try {
                     AlertDialog dialogo = new AlertDialog
                             .Builder(Creditos.this)
@@ -71,10 +73,8 @@ public class Creditos extends AppCompatActivity {
 
 
                 }catch (Exception e){
-                    Toast.makeText(Creditos.this, e.toString(), Toast.LENGTH_SHORT).show();
+                    e.toString();
                 }
-
-
             }
         });
 
