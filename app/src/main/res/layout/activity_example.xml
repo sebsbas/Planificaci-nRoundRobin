@@ -189,7 +189,7 @@
         android:layout_marginTop="@dimen/margin"
         android:layout_marginEnd="@dimen/margin"
         android:text="NO SE ADMITEN NUMEROS NEGATIVOS"
-        android:textColor="@color/cardview_dark_background"
+        android:textColor="#455A64"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTxtTR3" />

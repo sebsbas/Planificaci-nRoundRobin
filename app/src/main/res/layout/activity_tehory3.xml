@@ -16,6 +16,7 @@
         android:layout_marginEnd="@dimen/margin"
         android:background="#FBFBFB"
         android:backgroundTint="#CBD2FB"
+        android:gravity="center"
         android:text="Conceptos"
         android:textColor="#131F65"
         android:textSize="34sp"

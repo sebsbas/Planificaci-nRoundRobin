@@ -14,6 +14,7 @@
         android:layout_marginEnd="@dimen/margin"
         android:background="#FBFBFB"
         android:backgroundTint="#CBD2FB"
+        android:gravity="center"
         android:text="Otros conceptos"
         android:textColor="#0E174A"
         android:textDirection="locale"
@@ -66,7 +67,7 @@
         android:textColor="#0E0D0D"
         android:textSize="@dimen/text_theory4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
