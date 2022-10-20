@@ -11,10 +11,12 @@
         android:id="@+id/btnSalir"
         android:layout_width="60dp"
         android:layout_height="64dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin"
         android:backgroundTint="#00FFFCFC"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnHome6"
         app:srcCompat="@drawable/exit" />
 
@@ -22,10 +24,12 @@
         android:id="@+id/btnHome6"
         android:layout_width="65dp"
         android:layout_height="62dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin"
         android:backgroundTint="#00FFFCFC"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnSalir"
         app:layout_constraintStart_toEndOf="@+id/btnBack6"
         app:srcCompat="@drawable/hogar_36" />
 
@@ -33,10 +37,12 @@
         android:id="@+id/btnBack6"
         android:layout_width="56dp"
         android:layout_height="59dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin"
         android:backgroundTint="#00FFFCFC"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnHome6"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/izquierdo_36" />
 
@@ -44,13 +50,15 @@
         android:id="@+id/txtTitleCreditos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="93dp"
+        android:layout_marginStart="@dimen/margin"
         android:layout_marginTop="44dp"
+        android:layout_marginEnd="@dimen/margin"
         android:text="Créditos"
         android:textAppearance="@style/TextAppearance.AppCompat.Display3"
         android:textColor="#131E61"
         android:textSize="60sp"
         app:drawableTint="#0A0A83"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -58,10 +66,12 @@
         android:id="@+id/txtNombres"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="@dimen/margin"
         android:text="Integrantes: \n\n Sebastian Piñeros Garzon  \n Dana Valentina Lozano \n Daniel Felipe Rodríguez"
         android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
@@ -69,8 +79,10 @@
         android:id="@+id/imageView"
         android:layout_width="201dp"
         android:layout_height="178dp"
-        android:layout_marginStart="105dp"
+        android:layout_marginStart="@dimen/margin"
         android:layout_marginTop="30dp"
+        android:layout_marginEnd="@dimen/margin"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTitleCreditos"
         app:srcCompat="@drawable/group_work" />

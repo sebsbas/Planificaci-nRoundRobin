@@ -5,22 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:foregroundTint="#C59595"
+    android:background="@drawable/fondo"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="566dp"
-        android:layout_height="991dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/fondo" />
 
     <TextView
         android:id="@+id/txtWelcome"
         android:layout_width="352dp"
         android:layout_height="196dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginEnd="@dimen/margin"
         android:background="#00DDC6C6"
         android:backgroundTint="#FBF6F6"
         android:foregroundTint="#C33535"
@@ -29,6 +24,7 @@
         android:textColor="#EFEFEF"
         app:autoSizeTextType="uniform"
         app:drawableTint="#FFEB3B"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -36,14 +32,18 @@
         android:id="@+id/btnContinue"
         android:layout_width="154dp"
         android:layout_height="115dp"
-        android:layout_marginStart="136dp"
+        android:layout_marginStart="@dimen/margin"
         android:layout_marginTop="300dp"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin"
         android:backgroundTint="#005A1851"
         android:scaleType="centerCrop"
         android:tag="Continuar"
-        app:tint="#7C000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtWelcome"
-        app:srcCompat="@android:drawable/ic_menu_send" />
+        app:srcCompat="@android:drawable/ic_menu_send"
+        app:tint="#FF070F" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

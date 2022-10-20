@@ -9,16 +9,16 @@
 
     <TextView
         android:id="@+id/txtTitle"
-        android:layout_width="370dp"
-        android:layout_height="103dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="10dp"
+        android:layout_width="@dimen/layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginEnd="@dimen/margin"
         android:text="¿Qué es la planificación Round Robin?"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="#0E174A"
-        android:textSize="34sp"
+        android:textSize="@dimen/title_size"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,10 +26,11 @@
 
     <EditText
         android:id="@+id/txtDefinition"
-        android:layout_width="381dp"
-        android:layout_height="499dp"
-        android:layout_marginStart="16dp"
+        android:layout_width="@dimen/layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/margin"
         android:clickable="false"
         android:editable="false"
         android:ems="10"
@@ -47,6 +48,8 @@ En operaciones computacionales, un método para ejecutar diferentes procesos de 
 equitativa de los recursos del equipo, es limitando cada proceso a un pequeño período (quantum), y luego suspendiendo este
 proceso para dar oportunidad a otro proceso y así sucesivamente.'
         android:textAlignment="center"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
 
@@ -54,11 +57,15 @@ proceso para dar oportunidad a otro proceso y así sucesivamente.'
         android:id="@+id/btnBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="@dimen/margin"
         android:layout_marginBottom="32dp"
         android:backgroundTint="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnHome"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDefinition"
         app:srcCompat="@drawable/izquierdo_36"
         tools:srcCompat="@drawable/izquierdo_36" />
 
@@ -66,11 +73,15 @@ proceso para dar oportunidad a otro proceso y así sucesivamente.'
         android:id="@+id/btnNext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="@dimen/margin"
         android:layout_marginBottom="32dp"
         android:backgroundTint="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnHome"
+        app:layout_constraintTop_toBottomOf="@+id/txtDefinition"
         app:srcCompat="@drawable/derecho_36"
         tools:srcCompat="@drawable/derecho_36" />
 
@@ -78,11 +89,15 @@ proceso para dar oportunidad a otro proceso y así sucesivamente.'
         android:id="@+id/btnHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="@dimen/margin"
         android:layout_marginBottom="32dp"
         android:backgroundTint="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnNext"
         app:layout_constraintStart_toEndOf="@+id/btnBack"
+        app:layout_constraintTop_toBottomOf="@+id/txtDefinition"
         app:srcCompat="@drawable/hogar_36" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

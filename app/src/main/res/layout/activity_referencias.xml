@@ -10,10 +10,12 @@
         android:id="@+id/btnHome8"
         android:layout_width="82dp"
         android:layout_height="72dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginBottom="35dp"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin"
         android:backgroundTint="#00FFFCFC"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnNext8"
         app:layout_constraintStart_toEndOf="@+id/btnBack8"
         app:srcCompat="@drawable/hogar_36" />
 
@@ -21,10 +23,12 @@
         android:id="@+id/btnBack8"
         android:layout_width="73dp"
         android:layout_height="66dp"
-        android:layout_marginStart="39dp"
-        android:layout_marginBottom="35dp"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin"
         android:backgroundTint="#00FFFCFC"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnHome8"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/izquierdo_36" />
 
@@ -32,10 +36,12 @@
         android:id="@+id/btnNext8"
         android:layout_width="76dp"
         android:layout_height="67dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginBottom="35dp"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin"
         android:backgroundTint="#00FFFCFC"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnHome8"
         app:srcCompat="@drawable/derecho_36" />
 
@@ -43,20 +49,23 @@
         android:id="@+id/txtTitle7"
         android:layout_width="187dp"
         android:layout_height="57dp"
-        android:layout_marginStart="112dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginEnd="@dimen/margin"
         android:text="Referencias"
         android:textColor="#102C5A"
         android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/txtReferencias"
-        android:layout_width="355dp"
-        android:layout_height="346dp"
-        android:layout_marginStart="28dp"
+        android:layout_width="@dimen/layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin"
         android:layout_marginTop="24dp"
+        android:layout_marginEnd="@dimen/margin"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
@@ -67,7 +76,8 @@
         -http://www.sc.ehu.es/acwlaroa/SO2/Apuntes/Cap3.pdf – Eficiencia del algortimo\n
         -https://es.scribd.com/doc/43776541/ALGORITMO-DE-PLANIFICACION-DE-PROCESOS\n "
         android:textColor="#0B0A0A"
-        android:textSize="16sp"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTitle7" />
 </androidx.constraintlayout.widget.ConstraintLayout>
