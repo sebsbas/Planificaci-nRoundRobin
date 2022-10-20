@@ -7,100 +7,6 @@
     android:background="#C6D4D6"
     tools:context=".Example2">
 
-    <TextView
-        android:id="@+id/textTituFinales"
-        android:layout_width="313dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="100dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtFinalizacion" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="244dp"
-        android:text="TIEMPO DE FINALIZACIÓN:"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tblInf" />
-
-    <TextView
-        android:id="@+id/txtTurno"
-        android:layout_width="77dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="112dp"
-        android:layout_marginTop="52dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tblInf" />
-
-    <TextView
-        android:id="@+id/txtFinalizacion"
-        android:layout_width="140dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="224dp"
-        android:layout_marginTop="244dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tblInf" />
-
-    <TextView
-        android:id="@+id/txtTEspera"
-        android:layout_width="77dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="192dp"
-        android:layout_marginTop="192dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tblInf" />
-
-    <TextView
-        android:id="@+id/txtRInicial"
-        android:layout_width="77dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="164dp"
-        android:layout_marginTop="96dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tblInf" />
-
-    <TextView
-        android:id="@+id/txtRFinal"
-        android:layout_width="77dp"
-        android:layout_height="22dp"
-        android:layout_marginStart="164dp"
-        android:layout_marginTop="144dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tblInf" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="192dp"
-        android:text="TIEMPO DE ESPERA:"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tblInf" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="144dp"
-        android:text="RAFAGA FINAL:"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tblInf" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="96dp"
-        android:text="RAFAGA INICIAL:"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tblInf" />
-
     <ImageButton
         android:id="@+id/btnNext8"
         android:layout_width="wrap_content"
@@ -123,10 +29,10 @@
         android:layout_marginBottom="32dp"
         android:backgroundTint="#00FFFFFF"
         android:contentDescription="Home"
-        app:tint="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnBack8"
         app:srcCompat="@drawable/hogar_36"
+        app:tint="#000000"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
@@ -148,7 +54,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="124dp"
-        android:layout_marginBottom="64dp"
+        android:layout_marginBottom="20dp"
         android:background="#2B857C"
         android:backgroundTint="#FC330E0E"
         android:text="Siguiente estado"
@@ -159,8 +65,8 @@
 
     <TableLayout
         android:id="@+id/tblInf"
-        android:layout_width="414dp"
-        android:layout_height="166dp"
+        android:layout_width="416dp"
+        android:layout_height="130dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -274,9 +180,46 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="37dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="8dp"
         android:text="TURNO:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tblInf" />
+
+    <TextView
+        android:id="@+id/txtTEspera"
+        android:layout_width="77dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="188dp"
+        android:layout_marginTop="148dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tblInf" />
+
+    <TextView
+        android:id="@+id/textTituFinales"
+        android:layout_width="313dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFinalizacion" />
+
+    <TextView
+        android:id="@+id/txtFinalizacion"
+        android:layout_width="140dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tblInf" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="100dp"
+        android:text="RAFAGA FINAL:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tblInf" />
 
@@ -284,9 +227,66 @@
         android:id="@+id/textPuestosFinales"
         android:layout_width="315dp"
         android:layout_height="27dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="139dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="76dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtFinalizacion" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="52dp"
+        android:text="RAFAGA INICIAL:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tblInf" />
+
+    <TextView
+        android:id="@+id/txtRFinal"
+        android:layout_width="77dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tblInf" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="200dp"
+        android:text="TIEMPO DE FINALIZACIÓN:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tblInf" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="148dp"
+        android:text="TIEMPO DE ESPERA:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tblInf" />
+
+    <TextView
+        android:id="@+id/txtRInicial"
+        android:layout_width="77dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tblInf" />
+
+    <TextView
+        android:id="@+id/txtTurno"
+        android:layout_width="77dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tblInf" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
