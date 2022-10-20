@@ -36,6 +36,8 @@ public class Tehory4 extends AppCompatActivity {
 
         text = (EditText) findViewById(R.id.txtDefinition4a);
         text.setKeyListener(null);
+        text = (EditText) findViewById(R.id.txtDefinition4b);
+        text.setKeyListener(null);
 
         btnNext = (ImageButton) findViewById(R.id.btnNext4);
         btnNext.setOnClickListener(new View.OnClickListener() {
