@@ -6,15 +6,18 @@ import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class Creditos extends AppCompatActivity {
 
-    private ImageButton btnNext;
+    private ImageButton btnSalir;
     private ImageButton btnRestore;
     private ImageButton btnHome;
     private EditText text;
@@ -34,17 +37,41 @@ public class Creditos extends AppCompatActivity {
         setContentView(R.layout.activity_creditos);
 
 
-        btnNext = (ImageButton) findViewById(R.id.btnBack6);
-        btnNext.setOnClickListener(new View.OnClickListener() {
+        btnSalir = (ImageButton) findViewById(R.id.btnSalir);
+        btnSalir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 System.out.println("Entró");
                 try {
-                    Intent intent = new Intent(Creditos.this, Tehory5.class);
+                    AlertDialog dialogo = new AlertDialog
+                            .Builder(Creditos.this)
+                            .setPositiveButton("Sí, Cerrar", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    Intent intent = new Intent(Intent.ACTION_MAIN);
+                                    intent.addCategory(Intent.CATEGORY_HOME);
+                                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                                    startActivity(intent);
 
-                    activityLauncher.launch(intent);
+                                }
+                            })
+                            .setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+
+                                    dialog.dismiss();
+                                }
+                            })
+                            .setTitle("Confirmar")
+                            .setMessage("¿Deseas Cerrar la app?")
+                            .create();
+
+                    dialogo.show();
+
+
+
                 }catch (Exception e){
-                    e.toString();
+                    Toast.makeText(Creditos.this, e.toString(), Toast.LENGTH_SHORT).show();
                 }
 
 
