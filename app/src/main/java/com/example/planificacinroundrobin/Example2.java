@@ -5,6 +5,9 @@ import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,6 +16,8 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.ArrayList;
 
 public class Example2 extends AppCompatActivity {
 
@@ -25,6 +30,9 @@ public class Example2 extends AppCompatActivity {
     TextView tEs;
     TextView tFin;
     TextView PFin;
+    private RecyclerView listProcess;
+    ArrayList<Process> processes;
+    Adapter processAdapter;
 
     ActivityResultLauncher<Intent> activityLauncher=registerForActivityResult(
             new ActivityResultContracts.StartActivityForResult(),
@@ -63,6 +71,16 @@ public class Example2 extends AppCompatActivity {
             tEs = findViewById(R.id.txtTEspera);
             tFin = findViewById(R.id.txtFinalizacion);
             PFin = findViewById(R.id.textPuestosFinales);
+            listProcess = findViewById(R.id.rvResultados);
+            processes = new ArrayList<Process>();
+            Process p = new Process("Nº Proceso","Rafaga","T. Inicial","T. Final");
+            processes.add(p);
+
+            listProcess.addItemDecoration(new DividerItemDecoration(this,DividerItemDecoration.VERTICAL));
+            LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
+            listProcess.setLayoutManager(linearLayoutManager);
+            processAdapter = new Adapter(processes);
+            listProcess.setAdapter(processAdapter);
 
 
             TextView text = findViewById(R.id.llegada1);
@@ -124,6 +142,15 @@ public class Example2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 try{
+                    if(pos>2){
+                        pos=0;
+                    }
+                    if(p1 && p2 && p3){
+                        TextView title = findViewById(R.id.textTituFinales);
+                        title.setText("Tiempos finales de los procesos");
+                        PFin.setText("P1: "+f1+"  P2:"+f2+"   p3:"+f3);
+                        return;
+                    }
                     pos++;
                     switch(currentPos[pos-1]){
                         case 1:
@@ -137,6 +164,8 @@ public class Example2 extends AppCompatActivity {
                                     e1+=r1;
                                     tEs.setText(""+e1+"");
                                     tFin.setText("No finalizado");
+                                    add("Proceso 1",r1,(et-q),et);
+
                                 }else{
                                     et+=r1;
                                     turno.setText("Proceso 1");
@@ -149,7 +178,10 @@ public class Example2 extends AppCompatActivity {
                                     f1=et;
                                     tFin.setText(""+f1+"");
                                     p1=true;
+                                    add("Proceso 1",r1,(et-r1),et);
                                 }
+                            }else {
+                                onClick(view);
                             }
                             break;
 
@@ -164,6 +196,7 @@ public class Example2 extends AppCompatActivity {
                                     e2+=r2;
                                     tEs.setText(""+e2+"");
                                     tFin.setText("No finalizado");
+                                    add("Proceso 2",r2,(et-q),et);
                                 }else{
                                     et+=r2;
                                     turno.setText("Proceso 2");
@@ -175,7 +208,10 @@ public class Example2 extends AppCompatActivity {
                                     f2=et;
                                     tFin.setText(""+f2+"");
                                     p2=true;
+                                    add("Proceso 2",r2,(et-r2),et);
                                 }
+                            }else {
+                                onClick(view);
                             }
                             break;
 
@@ -190,6 +226,7 @@ public class Example2 extends AppCompatActivity {
                                     e3+=r3;
                                     tEs.setText(""+e3+"");
                                     tFin.setText("No finalizado");
+                                    add("Proceso 3",r3,(et-q),et);
                                 }else{
                                     et+=r3;
                                     turno.setText("Proceso 3");
@@ -201,16 +238,12 @@ public class Example2 extends AppCompatActivity {
                                     f3=et;
                                     tFin.setText(""+f3+"");
                                     p3=true;
+                                    add("Proceso 3",r3,(et-r3),et);
                                 }
+                            }else {
+                                onClick(view);
                             }
                             break;
-                    }
-                    if(pos>2){
-                        pos=0;
-                    }else if(p1 && p2 && p3){
-                        TextView title = findViewById(R.id.textTituFinales);
-                        title.setText("Tiempos finales de los procesos");
-                        PFin.setText("P1: "+f1+"  P2:"+f2+"   p3:"+f3);
                     }
                 }catch (Exception e){
                     System.out.println(e.toString());
@@ -256,9 +289,21 @@ public class Example2 extends AppCompatActivity {
 
             }
         });
-
-
-
+    }
+    public void add(String name, int r, int i, int f){
+        String tabo= "\t\t\t\t\t";
+        String tab = "";
+        if((String.valueOf(i).length()>1)&&(String.valueOf(f).length()>1)){
+            tab = "\t\t\t\t";
+        }else if(String.valueOf(f).length()>1){
+            tab = "\t\t\t\t\t";
+        }else{
+            tab = "\t\t\t\t\t\t";
+        }
+        Process p = new Process(name,tabo+String.valueOf(r),tabo+String.valueOf(i),tab+String.valueOf(f));
+        processes.add(p);
+        processAdapter.notifyDataSetChanged();
+        listProcess.scrollToPosition(processes.size()-1);
 
     }
 }
